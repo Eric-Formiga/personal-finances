@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
-...
+      meu app
     </ThemeProvider>
   )
 }
