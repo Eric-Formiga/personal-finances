@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { Auth } from "../pages/Auth"
-import { Navbar } from "../components/Layout/Navbar"
+import { Layout } from "../components/Layout"
 
 export const MainRoutes = () => {
     return (
@@ -15,10 +15,12 @@ export const MainRoutes = () => {
                 element={<Auth type="signup" />}
             />
 
-            <Route
+            <Route element={<Layout />}>
+                <Route 
                 index
-                element={<Navbar />}
-            />
+                element={<div> Essa é a pagina inicial</div>}
+                />
+            </Route>
         </Routes>
     )
 }
