@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { Auth } from "../pages/Auth"
 import { Layout } from "../components/Layout"
+import { Home } from "../pages/Home"
 
 export const MainRoutes = () => {
     return (
@@ -18,7 +19,7 @@ export const MainRoutes = () => {
             <Route element={<Layout />}>
                 <Route 
                 index
-                element={<div> Essa é a pagina inicial</div>}
+                element={<Home/>}
                 />
             </Route>
         </Routes>
