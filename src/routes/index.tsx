@@ -4,6 +4,7 @@ import { Layout } from "../components/Layout"
 import { Home } from "../pages/Home"
 import { NewTransaction } from "../pages/Transaction/New"
 import { EditTransaction } from "../pages/Transaction/Edit"
+import { Transactions } from "../pages/Transaction/Transactions"
 
 export const MainRoutes = () => {
     return (
@@ -23,8 +24,11 @@ export const MainRoutes = () => {
                     index
                     element={<Home />}
                 />
-
                 <Route path="/transacoes">
+                    <Route
+                        index
+                        element={<Transactions />}
+                    />
                     <Route
                         path="nova"
                         element={<NewTransaction />}

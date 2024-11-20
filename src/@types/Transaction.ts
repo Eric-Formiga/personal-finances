@@ -12,7 +12,7 @@ export type Transaction = {
 export type TransactionDashboard = Omit<Transaction, "id" | "title" | "status" | "user_id">
 
 export type ApiGetTransactions = {
-  transaction: {
+  transactions: {
     itemsRecieved: number,
     curPage: number,
     nextPage?: string,

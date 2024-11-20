@@ -10,7 +10,7 @@ type Props = {
     onDelete: (id: number) => void
 }
 
-export const TransactionTable = ({ data, onEdit, onDelete }: Props) => {
+export const TransactionsTable = ({ data, onEdit, onDelete }: Props) => {
     const theme = useTheme()
 
     return (
