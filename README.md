@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Personal Finances
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+## 📋 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Personal Finances** é uma aplicação web desenvolvida para ajudar os usuários a gerenciar suas finanças pessoais de forma simples e eficiente. O projeto permite o acompanhamento de receitas, despesas, e proporciona relatórios claros para planejamento financeiro.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+O projeto utiliza as seguintes tecnologias e ferramentas:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: Biblioteca JavaScript para a construção de interfaces.
+- **Redux Toolkit**: Gerenciamento de estado simplificado.
+- **React Router DOM**: Navegação entre páginas.
+- **Styled Components**: Estilização dinâmica de componentes.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## ⚙️ Funcionalidades
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Cadastro e autenticação de usuários.
+- Registro de receitas e despesas.
+- Visualização de gráficos e relatórios financeiros.
+- Alteração entre temas claro e escuro com o **themeSlice**.
+- Interface responsiva e moderna.
+
+---
+
+## 🛠️ Configuração e Instalação
+
+### Pré-requisitos
+
+- Node.js instalado na máquina.
+- Gerenciador de pacotes `npm` ou `yarn`.
+- Clonar o repositório:
+  ```bash
+  git clone https://github.com/Eric-Formiga/personal-finances.git
